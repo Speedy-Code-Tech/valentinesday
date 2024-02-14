@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentines Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainbg">
+        <div class="mainbgs"></div>
+       <img src="h.png" class="hearts" alt="">
+       <img src="hot.png" class="hot" alt="">
+       <h1 class="texts">HAPPY VALENTINES <BR>  <span id="name">TO YOU</span>!</h1>
+       <p class="myqoute" id="qoutes">
+        "Some people are settling down, some people are settling and some people refuse to settle for anything less than butterflies."<br> —Sex and The City
+       </p>
+    </div>
+  <audio src="sound.mp3" autoplay id="audio" loop></audio>
+  
+   <script src="https://code.responsivevoice.org/responsivevoice.js?key=GixdSuEo">
+        // responsiveVoice.speak("hello world", "UK English Male", {pitch: 2});
+    </script>
+    <script >
+    
+  
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+    //     swal("Write something here:", {
+    //     content: "input",
+    //   })
+    //   .then((value) => {
+    //     var audio = document.getElementById("audio");
+    //     audio.volume = 0.75;
+            
+    //     let name = document.querySelector('#name');
+    //     if(value){
+    //         audio.play();
+    //         console.log("May Lamn")
+    //         name.innerText = value.toUpperCase()
+    //         responsiveVoice.speak('HAPPY VALENTINES'+value+'!'+document.getElementById("qoutes").textContent , "UK English Male", {volume: 1});
+    //     }else{
+    //         audio.play();
+    //         console.log('Mayo Lamna')
+    //         responsiveVoice.speak('HAPPY VALENTINES TO YOU!'+document.getElementById("qoutes").textContent, "UK English Male", {volume: 1});
+    
+    //     }
+   
+    //   });
+      </script>
+      <script>
+         swal("Write something here:", {
+        content: "input",
+      })
+      .then((value) => {
+        var audio = document.getElementById("audio");
+        audio.volume = 0.75;
+            
+        let name = document.querySelector('#name');
+        if(value){
+            audio.play();
+            console.log("May Lamn")
+            name.innerText = value.toUpperCase()
+            responsiveVoice.speak('HAPPY VALENTINES'+value+'!'+document.getElementById("qoutes").textContent , "UK English Male", {volume: 1});
+        }else{
+            audio.play();
+            console.log('Mayo Lamna')
+            responsiveVoice.speak('HAPPY VALENTINES TO YOU!'+document.getElementById("qoutes").textContent, "UK English Male", {volume: 1});
+    
+        }
+      });
+      </script>
+  
+</body>
+</html>
